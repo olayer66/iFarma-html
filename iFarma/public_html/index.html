@@ -13,14 +13,12 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/3-col-portfolio.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+    <!-- js propio -->
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -78,7 +76,9 @@
                 <p>
                     Si deseas registrarte como paciente deberas tener el codigo proporcionado por tu medico de cabecera y pulsar el siguiente boton.
                 </p>
-                <button class="btn btn-default">Inscribirse</button>
+                <label>Codigo:</label>
+                <input type="text" name="codigo">
+                <a class="btn btn-default" href="nuevoPaciente.html">Inscribirse</a>
             </div>
             <div class="col-md-4 portfolio-item">
                 <img class="img-responsive" src="images/banner-med.jpg">
@@ -86,7 +86,7 @@
                 <p>
                     Si quieres registrarte como medico pulsa el siguiente boton.
                 </p>
-                <button class="btn btn-default">Inscribirse</button>
+                <a class="btn btn-default" href="nuevoMedico.html">Inscribirse</a>
             </div>
             <div class="col-md-4 portfolio-item">
                 <img class="img-responsive" src="images/banner-far.jpg">
@@ -94,7 +94,7 @@
                 <p>
                     Bienvenido si eres farmaceutico y quieres unirte a nuestra red de suministradores pulsa en el siguiente boton.
                 </p>
-                <button class="btn btn-default">Inscribirse</button>
+                <a class="btn btn-default" href="nuevoFarmacia.html">Inscribirse</a>
             </div>
         </div>
         <!-- /.row -->
@@ -113,13 +113,6 @@
 
     </div>
     <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
