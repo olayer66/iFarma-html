@@ -85,8 +85,11 @@ and open the template in the editor.
                         <input type="text" value="Torreblanca" class="form-control" id="apellidosPaciente">
                     </div>
                     <div class="form-group">
-                        <label for="fechaPaciente">Fecha de nacimiento:</label>
-                        <input type="text" value="29/10/1956"  class="form-control" id="fechaPaciente">
+                        <label class="control-label">Fecha de nacimiento:</label>
+                        <div class="input-group input-append date" id="datePicker">
+                            <input type="text" class="form-control" name="fechNacPaciente" />
+                            <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="nSegSocialPaciente">Numero Seg. social:</label>
@@ -108,9 +111,25 @@ and open the template in the editor.
                 <!--forma de pago-->
                 <div class="col-md-4 portfolio-item">
                     <h3>Forma de pago</h3>
-                    <label class="radio-inline"><input type="radio" name="formaPago">PayPal</label>
-                    <label class="radio-inline"><input type="radio" name="formaPago">Tarjeta</label>
-                    <label class="radio-inline"><input type="radio" name="formaPago">Efectivo</label> 
+                    <label class="radio-inline"><input type="radio" name="formaPago" value="p">PayPal</label>
+                    <label class="radio-inline"><input type="radio" name="formaPago" value="t">Tarjeta</label>
+                    <label class="radio-inline"><input type="radio" name="formaPago" value="e">Efectivo</label> 
+                    <div id="pagoPayPal">
+                        <p>plugin de paypal</p>
+                    </div>
+                    <div id="pagoTarjeta">
+                         <div class="form-group">
+                            <label for="numTarPaciente">Numero tarjeta:</label>
+                            <input type="password" class="form-control" id="numTarPaciente">
+                        </div>
+                         <div class="form-group">
+                            <label for="CodSegTarPaciente">CVC:</label>
+                            <input type="text" class="form-control" id="CodSegTarPaciente">
+                        </div>
+                    </div>
+                    <div id="pagoEfectivo">
+                        <p>los pedidos se pagaran al momento de recibirlos</p>
+                    </div>
                 </div>
                 <!--enviar-->
                 <div class="col-md-12">
