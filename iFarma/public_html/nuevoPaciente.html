@@ -38,7 +38,7 @@ and open the template in the editor.
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">iFarma</a>
+                <a class="navbar-brand" href="index.html">iFarma</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -60,41 +60,59 @@ and open the template in the editor.
     </nav>
     <!-- formulario -->
     <div class="container">
-        <div class="col-lg-12">
-            <h1 class="page-header">Nuevo paciente</h1>
-            <h1><small>Por favor compruebe los datos y rellene los que falten</small></h1>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Nuevo paciente</h1>
+                <h1><small>Por favor compruebe los datos y rellene los que falten</small></h1>
+            </div>
         </div>
-        <form  method="POST">
-            <!--Datos del usuario-->
-            <div class="col-md-4">
-                <div class="form-group">
-                    <label>Nombre:</label>
-                    <input type="text" value="Paco">
+        <div class="row">
+            <form>
+                <!--Datos del usuario-->
+                <div class="col-md-4 portfolio-item">
+                    <h3>Datos personales</h3>
+                    <div class="form-group">
+                        <label for="nombrePaciente">Nombre:</label>
+                        <input type="text" value="Paco" class="form-control" id="nombrePaciente">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidosPaciente">Apellidos:</label>
+                        <input type="text" value="Torreblanca" class="form-control" id="apellidosPaciente">
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaPaciente">Fecha de nacimiento:</label>
+                        <input type="text" value="29/10/1956"  class="form-control" id="fechaPaciente">
+                    </div>
+                    <div class="form-group">
+                        <label for="nSegSocialPaciente">Numero Seg. social:</label>
+                        <input type="text" value="21001457888"  class="form-control" id="nSegSocialPaciente">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>Apellidos:</label>
-                    <input type="text" value="Torreblanca">
+                <!--contraseña-->
+                <div class="col-md-4 portfolio-item">
+                    <h3>Contraseña</h3>
+                    <div class="form-group">
+                        <label for="contraPaciente">Contraseña:</label>
+                        <input type="password" class="form-control" id="contraPaciente">
+                    </div>
+                    <div class="form-group">
+                        <label for="contraRepPaciente">Repetir:</label>
+                        <input type="password" class="form-control" id="contraRepPaciente">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label>Fecha de nacimiento:</label>
-                    <input type="text" value="29/10/1956">
+                <!--forma de pago-->
+                <div class="col-md-4 portfolio-item">
+                    <h3>Forma de pago</h3>
+                    <label class="radio-inline"><input type="radio" name="formaPago">PayPal</label>
+                    <label class="radio-inline"><input type="radio" name="formaPago">Tarjeta</label>
+                    <label class="radio-inline"><input type="radio" name="formaPago">Efectivo</label> 
                 </div>
-                <div class="form-group">
-                    <label>Numero Seg. social:</label>
-                    <input type="text" value="21001457888">
+                <!--enviar-->
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-default center-block" value="Enviar">
                 </div>
-            </div>
-            <!--contraseña-->
-            <div class="col-md-4">
-            </div>
-            <!--forma de pago-->
-            <div class="col-md-4">
-            </div>
-            <!--enviar-->
-            <div class="col-md-12">
-                <input type="submit" class="btn btn-default" value="Enviar">
-            </div>
-        </form> 
+            </form> 
+        </div>
     </div>
     </body>
 </html>
