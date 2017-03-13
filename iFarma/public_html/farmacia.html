@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>iFarma</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+    <!-- js propio -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">iFarma</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Pacientes</a>
+                    </li>
+                    <li>
+                        <a href="#">Medicos</a>
+                    </li>
+                    <li>
+                        <a href="farmacia.html">Farmacias</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- ____________________BOTONES-PEDIDOS-STOCK_____________________________-->
+        <div class =botonesFarmacia>
+            <h2>Pedidos</h2>
+            <button type="button">
+               <img src="images/pedidos.png" alt="Pedidos" width="200" height="200">
+            </button>
+
+            <h2>Stock</h2>
+            <button type="button">
+               <img src="images/stock.png" alt="Stock" width="200" height="200">
+            </button>
+        </div>
+     
+        
+        
+ 
+        
+        
+        <!-- _______________________FIN BOTONES __________________________________-->
+        
+       <!-- ________________TABLE:ULTIMOS PEDIDOS___________________________ -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Ultimos pedidos</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <thead>
+                  <tr>
+                    <th>ID pedido</th>
+                    <th>Pedido</th>
+                    <th>Estado</th>
+                    <th>Realizar pedido</th>         
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><a href="pedido.html">OR9842</a></td>
+                    <td>Pepe botica</td>
+                    <td><span class="label label-success">Enviado</span></td>
+                    <td> <div class="btn-group">
+                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Action <span class="caret"></span>
+                         </button>
+                          <ul class="dropdown-menu">
+                          <li><a href="#">Pendiente</a></li>
+                          <li><a href="#">En proceso</a></li>
+                          <li><a href="#">Enviado</a></li>
+                          <li><a href="#">Entregado</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="pedido.html">OR1848</a></td>
+                    <td>Ronaldo santos</td>
+                    <td><span class="label label-warning">Pendiente</span></td>
+                    <td> <div class="btn-group">
+                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Action <span class="caret"></span>
+                         </button>
+                          <ul class="dropdown-menu">
+                          <li><a href="#">Pendiente</a></li>
+                          <li><a href="#">En proceso</a></li>
+                          <li><a href="#">Enviado</a></li>
+                          <li><a href="#">Entregado</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="pedido.html">OR7429</a></td>
+                    <td>Jose luis perales</td>
+                    <td><span class="label label-danger">Entregado</span></td>
+                    <td> <div class="btn-group">
+                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Action <span class="caret"></span>
+                         </button>
+                          <ul class="dropdown-menu">
+                          <li><a href="#">Pendiente</a></li>
+                          <li><a href="#">En proceso</a></li>
+                          <li><a href="#">Enviado</a></li>
+                          <li><a href="#">Entregado</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="pedido.html">OR7429</a></td>
+                    <td>Conchita velascp</td>
+                    <td><span class="label label-info">En proceso</span></td>
+                    <td> <div class="btn-group">
+                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Action <span class="caret"></span>
+                         </button>
+                          <ul class="dropdown-menu">
+                          <li><a href="#">Pendiente</a></li>
+                          <li><a href="#">En proceso</a></li>
+                          <li><a href="#">Enviado</a></li>
+                          <li><a href="#">Entregado</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+              <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Realizar cambios</a>
+              <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-right">Ver todos los pedidos</a>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+          <!-- ________________TABLE: LATEST ORDERS END___________________________ -->
+
+           
+        
+        
+        
+        
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; iFarma IW 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+</body>
+
+</html>
