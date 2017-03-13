@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Médico - iFarma</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">iFarma</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a data-toggle="tab" href="#listadoPacientes">Listado Pacientes</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#nuevoPaciente">Nuevo Paciente</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#feedback">Feedback</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Dr. Severo Ochoa <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Configuración</a></li>
+                            <li><a href="#">Editar perfil</a></li>
+                            <li><a href="/">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Inicio</h1>
+
+                <div class="tab-content">
+                    <div id="listadoPacientes" class="tab-pane fade">
+                        <h2>Listado de Pacientes</h2>
+                        <hr>
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Apellidos</th>
+                                    <th>Edad</th>
+                                    <th>Peso</th>
+                                    <th>Altura</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Placido</td>
+                                    <td>Olego Da Silva</td>
+                                    <td>27</td>
+                                    <td>74</td>
+                                    <td>1,76</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Juan Pedro</td>
+                                    <td>Torrado Muñoz</td>
+                                    <td>36</td>
+                                    <td>87</td>
+                                    <td>1,83</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Maria Clara</td>
+                                    <td>Nadal Gome-Perez</td>
+                                    <td>62</td>
+                                    <td>65</td>
+                                    <td>1,57</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Tomás</td>
+                                    <td>Serrano Hernandez</td>
+                                    <td>72</td>
+                                    <td>61</td>
+                                    <td>1,69</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Maruja</td>
+                                    <td>Gomez Blanco</td>
+                                    <td>58</td>
+                                    <td>82</td>
+                                    <td>1,65</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Gerrado</td>
+                                    <td>Torrico Delgado</td>
+                                    <td>37</td>
+                                    <td>62</td>
+                                    <td>1,70</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Julia</td>
+                                    <td>León Pérez</td>
+                                    <td>36</td>
+                                    <td>58</td>
+                                    <td>1,68</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Placido</td>
+                                    <td>Olego Da Silva</td>
+                                    <td>27</td>
+                                    <td>74</td>
+                                    <td>1,76</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Juan Pedro</td>
+                                    <td>Torrado Muñoz</td>
+                                    <td>36</td>
+                                    <td>87</td>
+                                    <td>1,83</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Maria Clara</td>
+                                    <td>Nadal Gome-Perez</td>
+                                    <td>62</td>
+                                    <td>65</td>
+                                    <td>1,57</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Tomás</td>
+                                    <td>Serrano Hernandez</td>
+                                    <td>72</td>
+                                    <td>61</td>
+                                    <td>1,69</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Maruja</td>
+                                    <td>Gomez Blanco</td>
+                                    <td>58</td>
+                                    <td>82</td>
+                                    <td>1,65</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Gerrado</td>
+                                    <td>Torrico Delgado</td>
+                                    <td>37</td>
+                                    <td>62</td>
+                                    <td>1,70</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Julia</td>
+                                    <td>León Pérez</td>
+                                    <td>36</td>
+                                    <td>58</td>
+                                    <td>1,68</td>
+                                    <td>
+                                        <a href="/paciente.html" class="btn btn-sm btn-success">Ver Paciente</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="nuevoPaciente" class="tab-pane fade">
+                        <h2>Nuevo Paciente</h2>
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-6 portfolio-item">
+                                <form>
+                                    <!--Datos del usuario-->
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre:</label>
+                                        <input type="text" class="form-control" id="nombre" placeholder="Introducir nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="apellidos">Apellidos:</label>
+                                        <input type="text" class="form-control" id="apellidos" placeholder="Introducir apellidos">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="edad">Edad:</label>
+                                        <input type="text" class="form-control" id="edad" placeholder="Introducir edad" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="peso">Peso:</label>
+                                        <input type="text" class="form-control" id="peso" placeholder="Introducir peso" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="altura">Altura:</label>
+                                        <input type="text" class="form-control" id="altura" placeholder="Introducir altura" />
+                                    </div>
+                                    <input type="submit" class="btn btn-default center-block" value="Enviar">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="feedback" class="tab-pane fade in active">
+                        <h2>Feedback Pacientes</h2>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; iFarma IW 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+    <!-- js propio -->
+    <script src="js/main.js"></script>
+</body>
+</html>
