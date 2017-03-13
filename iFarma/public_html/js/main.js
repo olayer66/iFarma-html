@@ -32,6 +32,11 @@ $('document').ready(function(){
             $("#pagoPayPal").hide();
         }
     });
+    $("#btnNuevousuario").on("click",function(){
+        var codigo=$("codNuevoUsuario").val();
+        if(codigo==="" || codigo===undefined || codigo===null)
+            alert("Codigo no valido");
+    });
 });
 
 
