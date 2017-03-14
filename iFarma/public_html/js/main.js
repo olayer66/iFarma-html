@@ -8,8 +8,8 @@ $('document').ready(function(){
     $("#pagoEfectivo").hide();
     $("#pagoTarjeta").hide();
     $("#pagoPayPal").hide();
-    
-    $('#datePicker').datepicker({
+
+    $('.datePicker').datepicker({
         format: 'dd/mm/yyyy'
     }).on('changeDate', function(e) {
         // Revalidate the date field
