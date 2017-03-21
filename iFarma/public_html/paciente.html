@@ -4,42 +4,56 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Médico - iFarma</title>
+    <title>Paciente - iFarma</title>
+    
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+    
+    
+    
 </head>
 <body>
-    <!-- Navigation -->
+    
+    
+<!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
+            
+            
+<!-- Brand and toggle get grouped for better mobile display -->
+
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">iFarma</a>
+                <a class="navbar-brand" href="index.html"><img src="images/logo1.png" alt="Inicio"></a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="medico.html#listadoPacientes">Listado Pacientes</a>
+                        <a data-toggle="tab" href="#tratamiento">Tratamiento</a>
                     </li>
                     <li>
-                        <a href="medico.html#nuevoPaciente">Nuevo Paciente</a>
+                        <a data-toggle="tab" href="#pedidosPc">Pedidos</a>
                     </li>
                     <li>
-                        <a href="medico.html#feedback">Feedback</a>
+                        <a data-toggle="tab" href="#feedbackDR">Feedback DR</a>
                     </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Dr. Severo Ochoa <span class="caret"></span>
+                            Saturnino Diaz <span class="caret"></span>
                         </a>
 
                         <ul class="dropdown-menu">
@@ -50,76 +64,284 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
+    <!-- INICIO PAGINA -->
+    
     <div class="container">
-        <!-- Page Header -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Inicio</h1>
+            <div class="tab-content">
+                
+    <!--ICONOS-->
 
-                <div class="row">
-                    <div class="col-lg-2">
-                        <img class="img-circle" src="http://placehold.it/150x150">
+                <div id="index" class="tab-pane fade in active">
+                    <div class="col-md-4 portfolio-item">
+                        
+                        <h2>Tratamiento</h2>
+                        <a data-toggle="tab" href="#tratamiento"><img src="images/tratamiento.jpg" alt="Tratamiento" width="200" height="200"></a>
+                        
                     </div>
+                    <div class="col-md-4 portfolio-item">
+                         
+                        <h2>Pedidos</h2>
+                        <a data-toggle="tab" href="#pedidosPc"><img src="images/pedidos3.jpg" alt="PedidosPc" width="200" height="200"></a>
+                        
+                    </div>
+                    <div class="col-md-4 portfolio-item">
+                         
+                        <h2>Feedback</h2>
+                        <a data-toggle="tab" href="#feedbackDR"><img src="images/doctor.jpg" alt="FeedbackDR" width="200" height="200"></a>
+                        
+                    </div>
+                    <div class="col-md-4 portfolio-item">
+                         
+                        <h2>Mi Perfil</h2>
+                        <a data-toggle="tab" href="#perfil"><img src="images/perfil.jpg" alt="Perfil" width="200" height="200"></a>
+                        
+                    </div>
+                </div>
+               
 
-                    <div class="col-lg-10">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <h4>Nombre: Placido</h4>
+       <!--TRATAMIENTOS-->
+                <div id="tratamiento" class="tab-pane fade">
+                   
+                        <h2 class="page-header">Tratamientos</h2>
+                    
+                    <div>
+                        <table id="tablaStock" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                  <th>Nombre del medicamento</th>
+                                  <th>Uso</th>
+                                  <th>Dosis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td>Ibuprofeno</td>
+                                  <td>Dolores</td>
+                                  <td>8h</td>
+                                </tr>
+                                <tr>
+                                  <td>Paracetamol</td>
+                                  <td>Mareos</td>
+                                  <td>10h</td>
+                                </tr>
+                                <tr>
+                                  <td>Acarbosa Tarbis</td>
+                                  <td>Embarazo</td>
+                                  <td>4h</td>
+                                </tr>
+                                <tr>
+                                  <td>Agua oxigenada</td>
+                                  <td>Herias</td>
+                                  <td>24h</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+       
+       
+    <!--PEDIDOS-->
+    
+    
+                <div id="pedidosPc" class="tab-pane fade">
+                    <div>
+                        <h2 class="page-header">Ultimos Pedidos</h2>
+                    </div>
+                    <div>
+                        <table id="tablaPedidosPc" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID pedido</th>
+                                    <th>Fecha</th>
+                                    <th>Estado</th>         
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="pedido.html">751140</a></td>
+                                    <td>21/04/2017</td>
+                                    <td><span class="label label-warning" style="font-size: 20px">PENDIENTE</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="pedido.html">015102</a></td>
+                                    <td>22/03/2017</td>
+                                    <td><span class="label label-success" style="font-size: 20px">EN RUTA</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="pedido.html">501485</a></td>
+                                    <td>20/02/2017</td>
+                                    <td><span class="label label-primary" style="font-size: 20px">ENTREGADO</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="pedido.html">369852</a></td>
+                                    <td>15/02/2017</td>
+                                    <td><span class="label label-danger" style="font-size: 20px">CANCELADO</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="pedido.html">151545</a></td>
+                                    <td>22/01/2017</td>
+                                    <td><span class="label label-primary" style="font-size: 20px">ENTREGADO</span></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="pedido.html">985632</a></td>
+                                    <td>18/12/2016</td>
+                                    <td><span class="label label-primary" style="font-size: 20px">ENTREGADO</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+       
+    <!--FEEDBACK-->
+    
+                <div id="feedbackDR" class="tab-pane fade">
+                    <div>    
+                    <h2 class="page-header">Feedback</h2>
+                    </div>
+                    
+                    <form>
+                        <div class="col-md-4 portfolio-item">
+                            <div class="form-group">
+                                <label for="nombrePaciente">Nombre:</label>
+                                <input type="text"class="form-control" id="nombrePaciente">
                             </div>
+                            <div class="form-group">
+                                <label for="apellidosPaciente">Apellidos:</label>
+                                <input type="text" class="form-control" id="apellidosPaciente">
+                            </div>
+                            <div class="form-group">
+                                <label for="nSegSocialPaciente">Numero Seg. social:</label>
+                                <input type="text" class="form-control" id="nSegSocialPaciente">
+                            </div>
+                            <div class="form-group">
+                                <label for="nColegiadoMedico">Codigo de su medico:</label>
+                                <input type="text" class="form-control" id="nColegiadoMedico">
+                            </div>
+                            <div class="form-group">
+                                <label>Feedback</label>   
+                                <textarea rows="3" name="Feedback" class="form-control" id ="FeedbackPc"></textarea>
+                            </div> 
+                            <a class="btn btn-default center-block"  id="btnFeedbackDR" href="/iFarma/paciente.html">Enviar</a>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <h4>Apellidos: Olego Da Silva</h4>
-                            </div>
+                    </form>     
+                </div>
+       
+    
+    <!--PERFIL-->
+    
+                <div  id="perfil" class="tab-pane fade" >
+                <h2 class="page-header">Mi Perfil</h2>
+                   
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <img src="images/persona.png" width="150" height="150">
                         </div>
 
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <h4>Edad: 27</h4>
+                        <div class="col-lg-10">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Nombre: Saturnino</h4>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Apellidos: Diaz</h4>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Numero Seg. Social: 28054185200</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <h4>Edad: 84</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <h4>Peso: 102</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <h4>Altura: 1,76</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-xs-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <h4>Peso: 75</h4>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <h4>Altura: 1,75</h4>
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <h4> Forma de pago: 
+                                                <select class="btn btn-default" name="opt">
+                                                    <option value="fut">Efectivo</option>
+                                                    <option value="bal">VISA</option>
+                                                    <option value="nat">MASTERCARD</option>
+                                                    <option value="ten">American Express</option>
+                                                    <option value="pad">PayPal</option>
+                                                </select>
+                                            </h4>  
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <h3>Medicamentos</h3>
-                        <hr>
-
-                        <div class="panel panel-default">
-                            <div class="panel-body">
+                    </div>
+                    <h2 class="page-header">Mi Farmacia    <a href="/iFarma/paciente.html" class="btn btn-default">Cambiar</a></h2>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <img src="images/farmacia.jpg"width="150" height="150">
+                        </div>
+                            
+                        <div class="col-lg-10">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Nombre: La Soledad</h4>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h4>Direccion: C/ La Fontana nº10</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <h4>Codigo Postal: 28035</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <h4>Ciudad: Madrid</h4>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /.row -->
-
         <hr>
-
+        
+        
         <!-- Footer -->
         <footer>
             <div class="row">
@@ -127,10 +349,8 @@
                     <p>Copyright &copy; iFarma IW 2017</p>
                 </div>
             </div>
-            <!-- /.row -->
         </footer>
-    </div>
-    <!-- /.container -->
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -138,5 +358,8 @@
     <script src="js/bootstrap.js"></script>
     <!-- js propio -->
     <script src="js/main.js"></script>
+    
+    </div>
+    
 </body>
 </html>
